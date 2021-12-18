@@ -1,22 +1,22 @@
 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
   <div class="container">
-    <a class="navbar-brand" href="#">INTERNATIONAL ALUMINUM FACTORY</a>
+    <a class="navbar-brand text-decoration-none" href="{% url 'applications:homepage' %}">INTERNATIONAL ALUMINUM FACTORY</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link {{homepage_status}}" href="">Home</a>
+          <a class="nav-link text-decoration-none {{homepage_status}}" href="{% url 'applications:homepage' %}">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link {{about_status}}" href="#about-us">About Us</a>
+          <a class="nav-link text-decoration-none {{about_status}}" href="#about-us">About Us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link {{product_status}}" href="#">Products</a>
+          <a class="nav-link text-decoration-none {{product_status}}" href="{% url 'applications:product_page' %}">Products</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link {{contact_status}}" href="#">Contact Us</a>
+          <a class="nav-link  text-decoration-none {{contact_status}}" href="{% url 'applications:contact_us_page' %}">Contact Us</a>
         </li>
 
       </ul>

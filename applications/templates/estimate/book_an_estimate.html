@@ -1,0 +1,258 @@
+{% extends 'base.html' %} {% load static %} 
+{% block title %}IAF | Book an Estimate{% endblock %} 
+
+{% block body %}
+<div class="iaf-estimate">
+  <div class="container">
+    <p class="iaf-schedule-title">Schedule an estimate</p>
+    <p class="iaf-schedule-description">
+      Please provide the following details to schedule an estimate
+    </p>
+
+    <div class="card iaf-estimate-card border-0">
+      <div class="card-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm col-md-6 col-lg-6">
+              <div class="mb-3">
+                <label for="lastName" class="form-label">Last Name</label>
+                <input
+                  type="text"
+                  class="form-control iaf-estimate-form"
+                  id="lastName"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="firstName" class="form-label">First Name</label>
+                <input
+                  type="text"
+                  class="form-control iaf-estimate-form"
+                  id="firstName"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="location" class="form-label">Location</label>
+                <input
+                  type="text"
+                  class="form-control iaf-estimate-form"
+                  id="location"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="contact" class="form-label">Contact No.</label>
+                <input
+                  type="text"
+                  class="form-control iaf-estimate-form"
+                  id="contact"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="email" class="form-label"
+                  >Email Address (optional)</label
+                >
+                <input
+                  type="email"
+                  class="form-control iaf-estimate-form"
+                  id="email"
+                />
+              </div>
+
+              <div class="mb-3">
+                <p>Service</p>
+                <div class="row">
+                  <div class="col-sm col-md-5 col-lg-5">
+                    <div class="form-check mb-3">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckDefault"
+                      />
+                      <label class="form-check-label" for="flexCheckDefault">
+                        ALUMINUM WINDOWS
+                      </label>
+                    </div>
+
+                    <div class="form-check mb-3">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckDefault"
+                      />
+                      <label class="form-check-label" for="flexCheckDefault">
+                        ALUMINUM DOORS
+                      </label>
+                    </div>
+
+                    <div class="form-check mb-3">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckDefault"
+                      />
+                      <label class="form-check-label" for="flexCheckDefault">
+                        KITCHEN CABINETS
+                      </label>
+                    </div>
+
+                    <div class="form-check mb-3">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckDefault"
+                      />
+                      <label class="form-check-label" for="flexCheckDefault">
+                        HANDRAILS
+                      </label>
+                    </div>
+
+                    <div class="form-check mb-3">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckDefault"
+                      />
+                      <label class="form-check-label" for="flexCheckDefault">
+                        WINDOW BLINDS
+                      </label>
+                    </div>
+
+                    <div class="form-check mb-3">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckDefault"
+                      />
+                      <label class="form-check-label" for="flexCheckDefault">
+                        SIGNBOARDS
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="col-sm col-md-7 col-lg-7">
+                    <div class="form-check mb-3">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckDefault"
+                      />
+                      <label class="form-check-label" for="flexCheckDefault">
+                        CEILINGS
+                      </label>
+                    </div>
+
+                    <div class="form-check mb-3">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckDefault"
+                      />
+                      <label class="form-check-label" for="flexCheckDefault">
+                        STEEL DOORS
+                      </label>
+                    </div>
+
+                    <div class="form-check mb-3">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckDefault"
+                      />
+                      <label class="form-check-label" for="flexCheckDefault">
+                        STEEL RAILS
+                      </label>
+                    </div>
+
+                    <div class="form-check mb-3">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckDefault"
+                      />
+                      <label class="form-check-label" for="flexCheckDefault">
+                        PARTITIONING
+                      </label>
+                    </div>
+
+                    <div class="form-check mb-3">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckDefault"
+                      />
+                      <label class="form-check-label" for="flexCheckDefault">
+                        ROOFING ZINC
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm col-md-6 col-lg-6">
+
+              <div class="mb-3">
+                <p>Choose your schedule</p>
+                <div class="card iaf-calendar-card">
+                    <div class="card-body">
+                    </div>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <p>Are you an existing customer?</p>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Yes</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" id="inlineCheckbox2" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">No</label>
+                  </div>
+                </div>
+                <div class="mb-3">
+                    <label for="howDoYouHear" class="form-label">How do you hear about us?</label>
+                    <input
+                      type="text"
+                      class="form-control iaf-estimate-form"
+                      id="howDoYouHear"
+                    />
+                </div>
+                <div class="mb-3">
+                    <label for="refName" class="form-label">Referral Name</label>
+                    <input
+                      type="text"
+                      class="form-control iaf-estimate-form"
+                      id="refName"
+                    />
+                </div>
+                <div class="mb-3">
+                    <label for="comments" class="form-label">Comments</label>
+                    <textarea class="form-control" id="comments" rows="3"></textarea>
+                </div>
+
+                <button class="uk-button uk-button-small iaf-book-est-btn rounded-pill">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
