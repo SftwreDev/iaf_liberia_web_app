@@ -66,6 +66,10 @@
     }
 
     .iaf-address-map {
-        background: url("/static/images/iaf_map.jpg");
+        /* background: url("/static/images/iaf_map.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 300px; */
     }
 }
