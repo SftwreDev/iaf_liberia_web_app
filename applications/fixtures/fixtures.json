@@ -1,0 +1,91 @@
+[
+    { "model": "auth.user",
+        "pk": 1,
+        "fields": {
+            "username": "super_admin",
+            "password": "pbkdf2_sha256$320000$S9DHxABTIl9VgmiE5eYX14$66FtE+ordVAU1zi/kehPQ2x7xGeEPgK81HaXCwM+Gmw=",
+            "is_superuser": true,
+            "is_staff": true,
+            "is_active": true
+        }
+    } , 
+
+    {
+        "model" : "applications.service",
+        "pk" : 1,
+        "fields" : {
+            "service": "ALUMINUM WINDOWS"
+        }
+    },
+    {
+        "model" : "applications.service",
+        "pk" : 2,
+        "fields" : {
+            "service": "ALUMINUM DOORS"
+        }
+    },
+    {
+        "model" : "applications.service",
+        "pk" : 3,
+        "fields" : {
+            "service": "KITCHEN CABINETS"
+        }
+    },
+    {
+        "model" : "applications.service",
+        "pk" : 4,
+        "fields" : {
+            "service": "HANDRAILS"
+        }
+    },
+    {
+        "model" : "applications.service",
+        "pk" : 5,
+        "fields" : {
+            "service": "WINDOW BLINDS"
+        }
+    },
+    {
+        "model" : "applications.service",
+        "pk" : 6,
+        "fields" : {
+            "service": "SIGNBOARDS"
+        }
+    },
+    {
+        "model" : "applications.service",
+        "pk" : 7,
+        "fields" : {
+            "service": "CEILINGS"
+        }
+    },
+    {
+        "model" : "applications.service",
+        "pk" : 8,
+        "fields" : {
+            "service": "STEEL DOORS"
+        }
+    },
+    {
+        "model" : "applications.service",
+        "pk" : 9,
+        "fields" : {
+            "service": "STEEL RAILS"
+        }
+    },
+    {
+        "model" : "applications.service",
+        "pk" : 10,
+        "fields" : {
+            "service": "PARTITIONING"
+        }
+    },
+    {
+        "model" : "applications.service",
+        "pk" : 11,
+        "fields" : {
+            "service": "ROOFING ZINC"
+        }
+    }
+
+]

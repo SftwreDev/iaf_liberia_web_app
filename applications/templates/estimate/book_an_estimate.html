@@ -76,31 +76,17 @@
                 <div class="mb-3">
                   <p>Service</p>
                   <div class="row">
-                    <div class="col-sm col-md-5 col-lg-5">
-                      {% for service1 in service1 %}
+                    <div class="iaf-estimate-service">
+                      {% for service in service %}
                       <div class="form-check mb-3">
                         <input
                           type="checkbox"
-                          name="service1"
-                          id="option{{service1}}"
-                          value="{{service1}}"
+                          name="service"
+                          id="option{{service.id}}"
+                          value="{{service.id}}"
+                          name="{{service.id}}"
                         />
-                        <label for="option{{service1}}">{{service1}}</label
-                        ><br />
-                      </div>
-                      {% endfor %}
-                    </div>
-
-                    <div class="col-sm col-md-7 col-lg-7">
-                      {% for service2 in service2 %}
-                      <div class="form-check mb-3">
-                        <input
-                          type="checkbox"
-                          name="service2"
-                          id="option{{service2}}"
-                          value="{{service2}}"
-                        />
-                        <label for="option{{service2}}">{{service2}}</label
+                        <label for="option{{service.id}}">{{service.service}}</label
                         ><br />
                       </div>
                       {% endfor %}
@@ -112,7 +98,7 @@
                 <div class="mb-3">
                   <p>Choose your schedule</p>
                   <div class="card iaf-calendar-card">
-                    <div class="card-body"></div>
+                    {% include "estimate/calendar.html" %}
                   </div>
                 </div>
 

@@ -1,0 +1,439 @@
+{% load static %}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+@media only screen and (max-width: 1920px) {
+  body {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .iaf-banner {
+    margin-top: 2rem;
+  }
+
+  .iaf-banner-text-1 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 60px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .iaf-banner-text-2 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .iaf-book-est-btn {
+    background-color: #1d2d75;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  .uk-card {
+    /* margin-top: 10rem; */
+    height: 25vh;
+    padding: 1rem 20rem 1rem 20rem;
+    position: absolute;
+    left: 250px;
+    top: 550px;
+    z-index: 3;
+  }
+
+  .iaf-why-choose-part {
+    margin-top: 5rem;
+  }
+
+  .iaf-why-choose-text {
+    font-size: 16px;
+  }
+
+  .iaf-we-serve-professionally {
+    font-size: 36px;
+    font-weight: bold;
+  }
+
+  .iaf-building-slogan {
+    margin-top: 1rem;
+    font-family: Poppins;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #010101;
+  }
+
+  .iaf-building-card {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .iaf-why-choose-card-1 {
+    width: 440px;
+    height: 243px;
+    color: white;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    align-items: center;
+    text-align: center;
+    border-radius: 18px;
+    padding: 2rem 0 2rem 0;
+    background: #1D2D75;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .iaf-why-choose-card-2 {
+    width: 440px;
+    height: 243px;
+    color: white;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    align-items: center;
+    text-align: center;
+    border-radius: 18px;
+    padding: 2rem 0 2rem 0;
+    background: #1D2D75;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .iaf-why-choose-cards {
+    margin-left: 8rem;
+  }
+
+  .iaf-about-us {
+    margin-top: 8rem;
+  }
+
+  .iaf-about-us-title, .iaf-our-mission-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 54px;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .iaf-about-us-title {
+    margin-top: 5rem;
+  }
+
+  .iaf-about-us-content, .iaf-our-mission-content {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .iaf-products-title {
+    margin-top: 8rem;
+  }
+
+  .iaf-products-title-1 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 54px;
+    text-align: center;
+    color: #000000;
+  }
+
+  .iaf-products-title-2 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: #68717A;
+  }
+
+  .iaf-product-1 {
+    margin-top: 1rem;
+    width: 337px;
+    height: 375px;
+    background: url("/static/images/product3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 23px;
+  }
+
+  .iaf-product-2 {
+    margin-top: 1rem;
+    width: 337px;
+    height: 375px;
+    background: url("/static/images/product1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 23px;
+  }
+
+  .iaf-product-3 {
+    margin-top: 1rem;
+    width: 337px;
+    height: 375px;
+    background: url("/static/images/product2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 23px;
+  }
+
+  .iaf-products-view-more-btn {
+    background-color: #1d2d75;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  .iaf-products-view-more {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .iaf-partners {
+    margin-top: 8rem;
+  }
+
+  .iaf-partners-title-1 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 54px;
+    text-align: center;
+    color: #000000;
+  }
+
+  .iaf-partners-1 {
+    width: 100px;
+    height: 100px;
+    background: url("/static/images/HARBEL.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .iaf-partners-2 {
+    width: 100px;
+    height: 100px;
+    background: url("/static/images/city_builder.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .iaf-partners-3 {
+    width: 100px;
+    height: 100px;
+    background: url("/static/images/LMTI.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .iaf-partners-4 {
+    width: 100px;
+    height: 100px;
+    background: url("/static/images/pizza_bar.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .iaf-partners-5 {
+    width: 218.7px;
+    height: 100px;
+    background: url("/static/images/orange.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .iaf-partners-6 {
+    width: 218.7px;
+    height: 100px;
+    background: url("/static/images/royal_hotel.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .iaf-partners-7 {
+    width: 218.7px;
+    height: 100px;
+    background: url("/static/images/stop_shop.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .iaf-partners-row-1 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .iaf-partners-row-2 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .iaf-footer {
+    margin-top: 15rem;
+    color: #FFFFFF;
+    height: 200px;
+    left: 1px;
+    top: 3583px;
+    background: #25284B;
+  }
+
+  .iaf-footer-small {
+    color: #FFFFFF;
+    height: 50px;
+    top: 3873px;
+    background: #3E4487;
+    display: flex;
+    justify-content: center;
+  }
+
+  .iaf-footer-address {
+    margin-top: 15px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  .iaf-footer p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    color: #FFFFFF;
+  }
+
+  .iaf-input-submit {
+    width: 88.72px;
+    height: 34px;
+    top: 3713px;
+    background: #5865FB;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  .iaf-input-email {
+    display: inline-block;
+  }
+
+  .iaf-email-input-area {
+    width: 225.3px;
+    height: 34px;
+    left: 60.82px;
+    top: 3713px;
+    background: #FFFFFF;
+  }
+
+  .iaf-social-media {
+    display: inline-block;
+  }
+
+  .iaf-facebook {
+    width: 36.97px;
+    height: 37px;
+    left: 1126.48px;
+    top: 3635px;
+    background: url("/static/images/fb.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .iaf-instagram {
+    width: 36.97px;
+    height: 37px;
+    left: 1126.48px;
+    top: 3635px;
+    background: url("/static/images/ig.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .iaf-banner {
+    height: 60vh;
+    width: 100%;
+  }
+
+  .iaf-book-est-btn {
+    background-color: #1d2d75;
+    color: #fff;
+  }
+
+  .uk-card {
+    margin-top: 3rem;
+    padding: 3rem 9rem 3rem 9rem;
+    height: 200px;
+    width: 800px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .iaf-banner {
+    height: 60vh;
+    width: 100%;
+  }
+
+  .iaf-book-est-btn {
+    background-color: #1d2d75;
+    color: #fff;
+    width: 250px;
+  }
+
+  .uk-card {
+    margin-top: 100rem;
+    padding: 1rem 2rem 1rem 2rem;
+    height: 180px;
+    width: 600px;
+  }
+}

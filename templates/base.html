@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="{% static 'css/estimate.css' %}" />
     <link rel="stylesheet" href="{% static 'css/product.css' %}" />
     <link rel="stylesheet" href="{% static 'css/contact.css' %}" />
+    {% comment %} <link rel="stylesheet" href="{% static 'css/calendar.css' %}" /> {% endcomment %}
 
     <!--Web Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -40,7 +41,7 @@
   <body>
     {% include 'navbar.html' %} 
     {% block body %}{% endblock %} 
-    {% include 'footer.html' %}
+    {% comment %} {% include 'footer.html' %} {% endcomment %}
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script

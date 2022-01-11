@@ -1,0 +1,154 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}IAF | Homepage{% endblock %}
+
+
+{% block body %}
+
+<div class="header">
+  <div class="uk-flex uk-flex-column uk-flex-center uk-flex-middle uk-background-cover uk-light iaf-banner" data-src="{% static 'images/iaf-banner.png' %}" uk-img>
+    <p class="text-center iaf-banner-text-1">Liberia's Number 1 <br> Aluminum Manufacturer</p>
+    <p class="text-center iaf-banner-text-2">Your Window To The World </p>
+
+  </div>
+  <div class="uk-card uk-card-default uk-card-body text-center iaf-building-card">
+    <p class="uk-card-title iaf-building-slogan">“ Building customer relationship through <br> prodigious aluminum craftsmanship “</p>
+    <a href="{% url 'applications:book_an_estimate' %}" class="uk-button uk-button-large iaf-book-est-btn rounded-pill">Book an Estimate</a>
+  </div>
+</div>
+
+<div class="iaf-why-choose-part">
+  <p class="text-center iaf-why-choose-text">Why Choose Us?</p>
+  <p class="text-center iaf-we-serve-professionally">We Serve Professionally</p>
+  <div class="container">
+    <div class="row iaf-why-choose-cards mt-5">
+      <div class="col-6">
+        <div class="iaf-why-choose-1">
+          <div class="card iaf-why-choose-card-1">
+            <div class="card-body">
+              If you are ordering a simple window or covering your 4000 M2 building with
+              high grade alubond and curtain wall, I.A.F is the place to go to. I.A.F holds
+              33 years of experience in the manufacturing sector, over 150 trained technicians & a
+              team of 12 certified engineers
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="iaf-why-choose-2">
+          <div class="card iaf-why-choose-card-2">
+            <div class="card-body">
+              I.A.F claims itself as the leader in its field, byConstantly increasing our market
+              share and maintaining our leadership in the field of aluminum subcontracting through
+              outstanding quality, exceptional craftsmanship and continuous determination.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="iaf-about-us" id="about-us">
+  <div class="uk-height-large uk-flex  uk-background-cover uk-light iaf-about-us-image" data-src="{% static 'images/beach.png' %}" uk-img>
+    <div class="container">
+      <div class="row">
+        <div class="col-6"></div>
+        <div class="col-6 text-center">
+          <p class="iaf-about-us-title mt-5">About Us</p>
+          <p class="iaf-about-us-content">
+            International Aluminium Factory (IAF) is a distinguished company in the field aluminum
+            subcontracting leading in quality output. IAF has been able to grow through efficient
+            management, and what we call “Hands On” production.
+          </p>
+          <p class="iaf-our-mission-title mt-5">Our Mission</p>
+          <p class="iaf-our-mission-content">
+            Provide innovative and fresh modern end products and
+            services to our esteemed clients.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="iaf-products">
+  <div class="iaf-products-title">
+    <p class="iaf-products-title-1">Products</p>
+    <p class="iaf-products-title-2">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque<br>ultricies pellentesque nisl, sed vulputate nibh feugiat non.
+    </p>
+  </div>
+  <div class="iaf-products-card">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm col-md-4 col-lg-4">
+          <div class="card iaf-product-1">
+          </div>
+        </div>
+
+        <div class="col-sm col-md-4 col-lg-4">
+          <div class="card iaf-product-2">
+          </div>
+        </div>
+
+        <div class="col-sm col-md-4 col-lg-4">
+          <div class="card iaf-product-3">
+          </div>
+        </div>
+      </div>
+
+      <div class="iaf-products-view-more">
+        <a class="uk-button uk-button-large iaf-products-view-more-btn rounded-pill text-decoration-none" href="{% url 'applications:product_page'  %}">View More</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="iaf-partners">
+  <div class="iaf-partners-title">
+    <p class="iaf-partners-title-1">Our Partners</p>
+  </div>
+
+  <div class="container mt-5">
+    <div class="iaf-partners-row-1">
+      <div class="row">
+        <div class="col-sm col-md-3 col-lg-3">
+          <div class="card border-0 iaf-partners-1">
+          </div>
+        </div>
+        <div class="col-sm col-md-3 col-lg-3">
+          <div class="card border-0 iaf-partners-2">
+          </div>
+        </div>
+        <div class="col-sm col-md-3 col-lg-3">
+          <div class="card border-0 iaf-partners-3">
+          </div>
+        </div>
+        <div class="col-sm col-md-3 col-lg-3">
+          <div class="card border-0 iaf-partners-4">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="iaf-partners-row-2">
+      <div class="row mt-5">
+        <div class="col-sm col-md-4 col-lg-4">
+          <div class="card border-0 iaf-partners-5">
+          </div>
+        </div>
+        <div class="col-sm col-md-4 col-lg-4">
+          <div class="card border-0 iaf-partners-6">
+          </div>
+        </div>
+        <div class="col-sm col-md-4 col-lg-4">
+          <div class="card border-0 iaf-partners-7">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock  %}

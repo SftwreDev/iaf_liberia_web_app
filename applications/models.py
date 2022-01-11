@@ -3,6 +3,14 @@ from django.db import models
 
 # Create your models here.
 
+class Service(models.Model):
+    """
+        Database Model Table for Service
+    """
+    service = models.CharField(max_length=255)
+
+    def __str__(self):
+        return self.service
 
 class ContactUsInquiries(models.Model):
     """
@@ -16,6 +24,9 @@ class ContactUsInquiries(models.Model):
     def __str__(self):
         return f"{self.name} | {self.email}"
 
+    class Meta:
+        verbose_name_plural = "Contact Us Inquiries"
+
 
 class BookAnEstimate(models.Model):
     """
@@ -26,7 +37,7 @@ class BookAnEstimate(models.Model):
     location = models.CharField(max_length=255)
     contact = models.CharField(max_length=255)
     email = models.CharField(max_length=255)
-    service = models.CharField(max_length=255)
+    service = models.ManyToManyField(Service, related_name="services")
     schedule = models.DateField(auto_now_add=False, null=True, blank=True)
     existing = models.CharField(max_length=255)
     how_do_you_hear = models.CharField(max_length=255)
@@ -36,3 +47,6 @@ class BookAnEstimate(models.Model):
 
     def __str__(self):
         return f"Customer Name : {self.last_name}, {self.first_name} | Schedule :  {self.schedule}"
+
+    class Meta:
+        verbose_name_plural = "Book An Estimate Inquiries"
