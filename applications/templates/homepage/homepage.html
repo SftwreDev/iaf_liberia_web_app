@@ -18,12 +18,13 @@
           </p>
           <p class="text-center iaf-banner-text-2">Your window to the world!</p>
           <div class="card iaf-banner-card">
-            <div class="card-body text-center iaf-banner-card-text">
-              “Building customer relationship through<br>prodigious aluminum craftsmanship“
+            <div class="card-body text-center">
+              <p class=" iaf-banner-card-text">“Building customer relationship through<br>prodigious aluminum craftsmanship“</p>
+              <div class="iaf-est-btn text-center ">
+                <a href="{% url 'applications:book_an_estimate' %}" class=" iaf-book-est-btn text-center rounded-pill text-decoration-none text-white">Book an Estimate</a>
+              </div>
             </div>
-            <div class="iaf-est-btn">
-              <a href="{% url 'applications:book_an_estimate' %}" class=" iaf-book-est-btn text-center rounded-pill text-decoration-none">Book an Estimate</a>
-            </div>
+
           </div>
         </div>
         <div class="col-sm col-md-2 col-lg-2"></div>
@@ -70,7 +71,7 @@
 </div>
 
 <!-- Homepage mission vision -->
-<div class="iaf-mission-vision">
+<div class="iaf-mission-vision" id="about-us">
   <div class="card-img-overlay iaf-mission-vision-img">
     <div class="container">
       <div class="row">
@@ -158,7 +159,7 @@
         
 
         <div class="card border-0 align-items-center">
-            <a href="" class="iaf-homepage-view-more text-decoration-none">View More</a>
+            <a href="{% url 'applications:product_page'  %}" class="iaf-homepage-view-more text-decoration-none">View More</a>
         </div>
     </div>
 </div>

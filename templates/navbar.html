@@ -1,9 +1,14 @@
+{% load static %}
 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
   <div class="container">
+    <img src="{% static 'images/logo.png' %}" width="50" height="50" class="d-inline-block align-top" alt="">
+    &nbsp; &nbsp; &nbsp;
     <a
       class="navbar-brand text-decoration-none"
       href="{% url 'applications:homepage' %}"
-      >INTERNATIONAL ALUMINUM FACTORY</a
+      >
+      INTERNATIONAL ALUMINUM FACTORY
+      </a
     >
     <button
       class="navbar-toggler"

@@ -1,75 +1,135 @@
 {% load static %}
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-@media only screen and (max-width: 1920px) {
+body {
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  background-color: #f9f9f9;
+}
+
+
+/*  Desktops, large screens */
+@media only screen and (max-width: 1024px),  (max-width: 1900px) {
+
     .iaf-contact-us {
-        margin-top: 8rem;
+        margin-top: 2rem;
     }
 
-    .iaf-contact-us-title {
-        font-family: Poppins;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 30px;
-        color: #000000;
+    .iaf-book-est-btn {
+        width: 7rem;
+        height: 3rem;
+        font-size: 14px;
     }
 
-    .iaf-contact-us-desc {
-        width: 370px;
-        height: 216px;
-        margin-left: 80px;
-        top: 249px;
-        font-family: Poppins;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 24px;
-        line-height: 36px;
-        color: #000000;
-    }
+    .iaf-contact-banner-img{
 
-    .iaf-contact-us-card {
-        background: #FFFFFF;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        border-radius: 18px;
-        padding: 2rem;
-        width: 520px;
-    }
-
-    .iaf-contact-form{
-        width: 413px;
-        height: 26px;
-        left: 682px;
-        top: 244px;
-        background: #FFFEFE;
-        border: 1px solid rgba(0, 0, 0, 0.6);
-        box-sizing: border-box;
-        border-radius: 4px;
-    }
-
-    .iaf-contact-textarea {
-        width: 413px;
-        height: 196px;
-        left: 682px;
-        top: 550px;
-        background: #FFFEFE;
-        border: 1px solid rgba(0, 0, 0, 0.6);
-        box-sizing: border-box;
-        border-radius: 4px;
-    }
-
-    .iaf-contact-us-map-card {
-        margin-top: 3rem;
-        height: 354px;
-        background: #F2F2F2;
-    }
-
-    .iaf-address-map {
-        /* background: url("/static/images/iaf_map.jpg");
+        height: 33rem;
+        background:  linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),  url("/static/images/contact_us_img.jpg");
         background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 300px; */
+        margin-bottom: 5rem;
+    }
+    
+
+    .iaf-contact-card-title {
+        margin-top: 200px;
+        font-size: 45px;
+        color: white;
+        font-weight: bold;
+    }
+
+    .iaf-contact-card-text {
+        font-size: 20px;
+        color: white;
+    }
+
+    .iaf-contact-us-btn {
+        background-color: #1d2d75;
+        width: 150px;
+    }
+
+    .iaf-contact-office-location {
+        margin-top: 100px;
+        font-size: 35px;
+        color: black;
+        font-weight: bold;
+    }
+
+    .iaf-contact-location-desc {
+        font-size: 25px;
+        /* line-height: 30px; */
+        text-align: justify;
+    }
+
+    .iaf-location {
+        margin-top: 100px;
+    }
+}
+
+/*  Desktops, large screens */
+@media only screen and(max-width: 414px), (max-width: 480px) , (max-width: 540px) ,  (max-width: 320px )  {
+    .iaf-book-est-btn {
+        width: 7rem;
+        height: 3rem;
+        font-size: 14px;
+    }
+
+    .iaf-contact-banner-img{
+
+        height: 33rem;
+        background:  linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),  url("/static/images/contact_us_img.jpg");
+        background-size: cover;
+        margin-bottom: 5rem;
+    }
+    
+
+    .iaf-contact-card-title {
+        margin-top: 200px;
+        font-size: 35px;
+        color: white;
+        font-weight: bold;
+    }
+
+    .iaf-contact-card-text {
+        font-size: 18px;
+        color: white;
+    }
+
+    .iaf-contact-us-btn {
+        background-color: #1d2d75;
+        width: 150px;
+    }
+
+    .iaf-contact-office-location {
+        margin-top: 100px;
+        font-size: 35px;
+        color: black;
+        font-weight: bold;
+    }
+
+    .iaf-contact-location-desc {
+        font-size: 18px;
+        /* line-height: 30px; */
+        text-align: center;
+    }
+
+    .iaf-location {
+        margin-top: 100px;
+    }
+
+    .iaf-location-map {
+        overflow:hidden;
+        padding-bottom:56.25%;
+        position:relative;
+        height:0;
+    }
+
+    .iaf-location-map iframe{
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        position:absolute;
     }
 }

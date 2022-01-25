@@ -84,19 +84,17 @@ body {
     color: #010101;
   }
 
-  
   .iaf-est-btn {
-    display: flex;
-    justify-content: center;
+    margin-top: 5rem;
   }
 
   .iaf-book-est-btn {
     filter: drop-shadow(0px 6px 10px rgba(0, 0, 0, 0.25));
     background-color: #1d2d75;
     font-size: 18px;
-    padding: 15px 0px 15px 0px;
+    padding: 15px 20px 15px 20px;
     color: white;
-    width: 218px;
+    width: 418px;
     height: 54.66px;
     margin-bottom: 45px;
     filter: drop-shadow(0px 6px 10px rgba(0, 0, 0, 0.25));
@@ -316,19 +314,17 @@ body {
   }
 
   .iaf-est-btn {
-    display: flex;
-    justify-content: center;
+    
   }
 
   .iaf-book-est-btn {
     filter: drop-shadow(0px 6px 10px rgba(0, 0, 0, 0.25));
     background-color: #1d2d75;
     font-size: 12px;
-    padding: 13px 0px 0px 0px;
+    padding: 13px 15px 13px 15px;
     color: white;
     width: 150px;
     height: 45px;
-    margin-bottom: 45px;
   }
 
   .iaf-why-choose-us {

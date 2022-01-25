@@ -1,107 +1,151 @@
-{% extends 'base.html' %}
+div{% extends 'base.html' %}
 {% load static %} 
 {% block title %}IAF | Contact Us{%endblock %} 
 
 {% block body %}
 
 <div class="iaf-contact-us">
-  <div class="container">
-    <p class="iaf-contact-us-title">Contact Us</p>
-
-    <div class="row">
-      <div class="col-sm col-md-6 col-lg-6">
-        <p class="iaf-contact-us-desc">
-          Do you have a project you<br />
-          would like us to take a look at<br />
-          or maybe you have an idea?<br />
-          Don’t hesitate to send us an<br />
-          email or give us a call.
-        </p>
+  <div class="iaf-contact-banner-img">
+    {% comment %} <img src="{% static 'images/contact_us_img.jpg' %}" class="card-img" alt="..."> {% endcomment %}
+    <div class="card-img-overlay text-center border-0 iaf-contact-banner ">
+      <p class="card-title iaf-contact-card-title">We'd love to hear from you</p>
+      <p class="card-text iaf-contact-card-text">
+        Have questions about our products, services, or pricing? <br>
+        Our team will help you.
+      </p>
+      <div class="text-center">
+        <button class="btn iaf-contact-us-btn text-center text-white" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+          Contact Us
+        </button>
       </div>
+    </div>
+  </div>
 
-      <div class="col-sm col-md-6 col-lg-6">
-        <div class="card iaf-contact-us-card">
-          <div class="card-body">
-            <form action="/app/v1/contact/contact-us/send-email" method="post">
-              {% csrf_token %}
-              <div class="mb-3">
-                <label for="name" class="form-label">Name</label>
-                <input
-                  type="text"
-                  class="form-control iaf-contact-form"
-                  id="name"
-                  name="name"
-                  required
-                />
-              </div>
-
-              <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input
-                  type="email"
-                  class="form-control iaf-contact-form"
-                  id="email"
-                  name="email"
-                  required
-                />
-              </div>
-
-              <div class="mb-3">
-                <label for="contact" class="form-label">Contact No.</label>
-                <input
-                  type="text"
-                  class="form-control iaf-contact-form"
-                  id="contact"
-                  name="contact"
-                  required
-                />
-              </div>
-
-              <div class="mb-3">
-                <label for="message" class="form-label">Message</label>
-                <textarea
-                  class="form-control iaf-contact-textarea"
-                  id="message"
-                  name="message"
-                  rows="3"
-                ></textarea>
-              </div>
-
-              <button
-                class="uk-button uk-button-small iaf-book-est-btn rounded-pill"
-                type="submit"
-              >
-                Submit
-              </button>
-            </form>
+  <div class="container mt-5">
+    <div class="text-center">
+      <p class="iaf-contact-office-location">Office Location</p>
+    </div>
+    
+    <div class="card border" style="height: 400px;"> 
+      <div class="row iaf-location">
+        <div class="col-sm col-md-6 col-lg-6">
+          <div class="text-center mb-5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="#1d2d75" class="bi bi-geo-alt" viewBox="0 0 16 16">
+              <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+              <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+            </svg>
           </div>
+        </div>
+        <div class="col-sm col-md-6 col-lg-6">
+          <p class="iaf-contact-location-desc">
+            5th. Street, Sinkor, Monrovia, Liberia<br />
+            Opposite Insurance Company Bldg<br /> and Total Gas Station<br />
+            +231 770 250 250 / +231 886 121 212
+          </p>
         </div>
       </div>
     </div>
 
-    <div class="card border-0 iaf-contact-us-map-card">
-      <div class="card-body">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm col-md-6 col-lg-6">
-              <p>Office Locations</p>
-              <p>
-                5th. Street, Sinkor, Monrovia, Liberia<br />
-                Opposite Insurance Company Bldg and Total Gas Station<br />
-                +231 770 250 250 / +231 886 121 212
-              </p>
-            </div>
-            <div class="col-sm col-md-6 col-lg-6">
-              <div class="iaf-address-map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d652.2209400057164!2d-10.788525001568829!3d6.294568271837084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xf0a02a7e4af37c7%3A0xe5cf0fd6b4aeb4cd!2sInternational%20Aluminum%20Factory!5e0!3m2!1sen!2sph!4v1641578807200!5m2!1sen!2sph" 
-                width="600" height="310" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-              </div>
+    <div class="card mt-5" style="height: 400px;"> 
+      <div class="row mt-5">
+        <div class="col-sm col-md-6 col-lg-6 d-block d-sm-none">
+          <div class="text-center mb-5 ">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="#1d2d75" class="bi bi-map" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M15.817.113A.5.5 0 0 1 16 .5v14a.5.5 0 0 1-.402.49l-5 1a.502.502 0 0 1-.196 0L5.5 15.01l-4.902.98A.5.5 0 0 1 0 15.5v-14a.5.5 0 0 1 .402-.49l5-1a.5.5 0 0 1 .196 0L10.5.99l4.902-.98a.5.5 0 0 1 .415.103zM10 1.91l-4-.8v12.98l4 .8V1.91zm1 12.98 4-.8V1.11l-4 .8v12.98zm-6-.8V1.11l-4 .8v12.98l4-.8z"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="col-sm col-md-6 col-lg-6 mb-5">
+          <div class="card border-0">
+            <div class="card-body iaf-location-map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d652.2209400057164!2d-10.788525001568829!3d6.294568271837084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xf0a02a7e4af37c7%3A0xe5cf0fd6b4aeb4cd!2sInternational%20Aluminum%20Factory!5e0!3m2!1sen!2sph!4v1641578807200!5m2!1sen!2sph" 
+              width="600" height="310" style="border:0;" allowfullscreen="" loading="lazy">
+              </iframe>
             </div>
           </div>
         </div>
+
+        <div class="col-sm col-md-6 col-lg-6 d-none d-sm-block">
+          <div class="text-center mt-5 ">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="#1d2d75" class="bi bi-map" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M15.817.113A.5.5 0 0 1 16 .5v14a.5.5 0 0 1-.402.49l-5 1a.502.502 0 0 1-.196 0L5.5 15.01l-4.902.98A.5.5 0 0 1 0 15.5v-14a.5.5 0 0 1 .402-.49l5-1a.5.5 0 0 1 .196 0L10.5.99l4.902-.98a.5.5 0 0 1 .415.103zM10 1.91l-4-.8v12.98l4 .8V1.91zm1 12.98 4-.8V1.11l-4 .8v12.98zm-6-.8V1.11l-4 .8v12.98l4-.8z"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+        
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="staticBackdropLabel">Contact Us</h3>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="/app/v1/contact/contact-us/send-email" class="m-2" method="post">
+          {% csrf_token %}
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input
+              type="text"
+              class="form-control iaf-contact-form"
+              id="name"
+              name="name"
+              required
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input
+              type="email"
+              class="form-control iaf-contact-form"
+              id="email"
+              name="email"
+              required
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="contact" class="form-label">Contact No.</label>
+            <input
+              type="text"
+              class="form-control iaf-contact-form"
+              id="contact"
+              name="contact"
+              required
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea
+              class="form-control iaf-contact-textarea"
+              id="message"
+              name="message"
+              rows="3"
+            ></textarea>
+          </div>
+
+          <button
+            class="btn text-white iaf-book-est-btn rounded-pill"
+            type="submit"
+          >
+            Submit
+          </button>
+        </form>
       </div>
     </div>
   </div>
 </div>
+
 
 {% endblock %}
