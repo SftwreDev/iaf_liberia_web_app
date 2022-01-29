@@ -10,30 +10,19 @@ def book_an_estimate(request):
     """
     # Declare HTML Template
     template_name = "estimate/book_an_estimate.html"
-    service1 = {
-        "ALUMINUM WINDOWS",
-        "ALUMINUM DOORS",
-        "KITCHEN CABINETS",
-        "HANDRAILS",
-        "WINDOW BLINDS",
-        "SIGNBOARDS",
-    }
-    service2 = {
-        "CEILINGS",
-        "STEEL DOORS",
-        "STEEL RAILS",
-        "PARTITIONING",
-        "ROOFING ZINC",
-    }
+    service1 = [1, 2, 3, 4, 5, 6]
+    service2 = [7, 8, 9, 10, 11]
 
     existing_customer = {
         "Yes", "No"
     }
 
-    service = Service.objects.all()
+    service1 = Service.objects.filter(id__in=service1)
+    service2 = Service.objects.filter(id__in=service2)
 
     context = {
-        "service": service,
+        "service1": service1,
+        "service2": service2,
         "existing_customer" : existing_customer
     }
     # Return render response

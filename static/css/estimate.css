@@ -2,52 +2,62 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-@media only screen and (max-width: 1920px) {
+@media only screen and (max-width: 1024px),  (max-width: 1900px) {
 
     .iaf-estimate {
-        margin-top: 6rem;
+        margin-top: 4rem;
     }
 
-    .iaf-schedule-title {
-        font-family: Poppins;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 30px;
-        color: #000000;
+    .iaf-estimate-schedule-text {
+        margin-top: 70px;
+        font-size: 35px;
     }
 
-    .iaf-schedule-description {
-        width: 600px;
-        height: 30px;
-        margin-left: 50px;
-        top: 190px;
-        font-family: Poppins;
-        font-style: normal;
-        font-weight: 300;
+    .iaf-estimate-schedule-description {
         font-size: 20px;
-        line-height: 30px;
-        color: #68717A;
     }
-    
+
     .iaf-estimate-card {
-        background: #F2F2F2;
-        padding: 2rem;
+        top: 0;
+        bottom: 0;
+        position:fixed;
+        overflow-y:scroll;
+        overflow-x:hidden;
+
     }
 
-    .iaf-estimate-form {
-        width: 323px;
-        height: 26px;
-        background: #FFFEFE;
-        border: 1px solid rgba(0, 0, 0, 0.6);
-        box-sizing: border-box;
-        border-radius: 4px;
+    .iaf-estimate-form-card {
+        margin-top: 20rem;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        margin-bottom: 10rem;
     }
 
-    .iaf-calendar-card {
-        /* height: 300px; */
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    .iaf-book-est-btn {
+        background-color: #1d2d75;
     }
 
+    #iafInfo {
+        opacity: 1;
+        transition: opacity 1s;
+    }
 
+    #iafInfo.hide {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+@media only screen and(max-width: 414px), (max-width: 480px) , (max-width: 540px) ,  (max-width: 320px)  {
+
+    .iaf-estimate {
+        font-size: 12px;
+    }
+
+    .iaf-estimate-card {
+        padding: 1rem;
+    }
+
+    .iaf-form {
+        margin-top: 15rem;
+    }
 }

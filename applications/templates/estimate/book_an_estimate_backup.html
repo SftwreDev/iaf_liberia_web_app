@@ -1,0 +1,170 @@
+{% extends 'base.html' %} 
+{% load static %} 
+{% block title %}IAF | Book an Estimate{% endblock %} 
+
+
+{% block body %}
+<div class="iaf-estimate">
+  <div class="container">
+    <p class="iaf-schedule-title">Schedule an estimate</p>
+    <p class="iaf-schedule-description">
+      Please provide the following details to schedule an estimate
+    </p>
+
+    <div class="card iaf-estimate-card border-0">
+      <form method="post" action="/app/v1/book-an-estimate">
+        {% csrf_token %}
+        <div class="card-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm col-md-6 col-lg-6">
+                <div class="mb-3">
+                  <label for="lastName" class="form-label">Last Name</label>
+                  <input
+                    type="text"
+                    class="form-control iaf-estimate-form"
+                    id="lastName"
+                    name="lastName"
+                    required
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label for="firstName" class="form-label">First Name</label>
+                  <input
+                    type="text"
+                    class="form-control iaf-estimate-form"
+                    id="firstName"
+                    name="firstName"
+                    required
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label for="location" class="form-label">Location</label>
+                  <input
+                    type="text"
+                    class="form-control iaf-estimate-form"
+                    id="location"
+                    name="location"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="contact" class="form-label">Contact No.</label>
+                  <input
+                    type="text"
+                    class="form-control iaf-estimate-form"
+                    id="contact"
+                    name="contact"
+                    required
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label for="email" class="form-label"
+                    >Email Address (optional)</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control iaf-estimate-form"
+                    id="email"
+                    name="email"
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <p>Service</p>
+                  <div class="row">
+                    <div class="iaf-estimate-service">
+                      {% for service in service %}
+                      <div class="form-check mb-3">
+                        <input
+                          type="checkbox"
+                          name="service"
+                          id="option{{service.id}}"
+                          value="{{service.id}}"
+                          name="{{service.id}}"
+                        />
+                        <label for="option{{service.id}}">{{service.service}}</label
+                        ><br />
+                      </div>
+                      {% endfor %}
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm col-md-6 col-lg-6">
+                <div class="mb-3">
+                  <p>Choose your schedule</p>
+                  <div class="card iaf-calendar-card">
+                    {% include "estimate/calendar.html" %}
+                  </div>
+                </div>
+
+                <div class="mb-3">
+                  <p>Are you an existing customer?</p>
+                  {% for exist in existing_customer%}
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      name="existing"
+                      type="radio"
+                      id="flexRadioDefault1"
+                      value="{{exist}}"
+                    />
+                    <label class="form-check-label" for="flexRadioDefault1"
+                      >{{exist}}</label
+                    >
+                  </div>
+                  {% endfor %}
+                </div>
+                <div class="mb-3">
+                  <label for="howDoYouHear" class="form-label"
+                    >How do you hear about us?</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control iaf-estimate-form"
+                    id="howDoYouHear"
+                    name="howDoYouHear"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="refName" class="form-label">Referral Name</label>
+                  <input
+                    type="text"
+                    class="form-control iaf-estimate-form"
+                    id="refName"
+                    name="refName"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="comments" class="form-label">Comments</label>
+                  <textarea
+                    class="form-control"
+                    id="comments"
+                    name="comments"
+                    rows="3"
+                  ></textarea>
+                </div>
+
+                <button
+                  class="
+                    uk-button uk-button-small
+                    iaf-book-est-btn
+                    rounded-pill
+                  "
+                  type="submit"
+                >
+                  Submit
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %}

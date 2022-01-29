@@ -251,7 +251,7 @@ body {
 }
 
 /*  Desktops, large screens */
-@media only screen and(max-width: 414px), (max-width: 480px) , (max-width: 540px) ,  (max-width: 320px )  {
+@media only screen and(max-width: 414px), (max-width: 480px) , (max-width: 540px) ,  (max-width: 320px)  {
   .iaf-banner-img {
     margin-top: 1rem;
     position: relative;
