@@ -12,7 +12,7 @@ body {
 .iaf-banner-img {
   margin-top: 2rem;
   position: relative;
-  background: url("/static/images/iaf-banner.png");
+  background: url("https://res.cloudinary.com/internationalalluminumfactory/image/upload/v1643651759/iafi-liberia/iaf-banner_oowhvy.png");
   min-height: 90vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -154,7 +154,7 @@ body {
 
   .iaf-mission-vision-img {
     position: relative;
-    background: url("/static/images/beach.png");
+    background: url("https://res.cloudinary.com/internationalalluminumfactory/image/upload/v1643651840/iafi-liberia/beach_wj5nt3.png");
     min-height: 50vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -255,7 +255,7 @@ body {
   .iaf-banner-img {
     margin-top: 1rem;
     position: relative;
-    background: url("/static/images/iaf-banner.png");
+    background: url("https://res.cloudinary.com/internationalalluminumfactory/image/upload/v1643651759/iafi-liberia/iaf-banner_oowhvy.png");
     min-height: 50vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -364,7 +364,7 @@ body {
 
   .iaf-mission-vision-img {
     position: relative;
-    background: url("/static/images/beach.png");
+    background: url("https://res.cloudinary.com/internationalalluminumfactory/image/upload/v1643651840/iafi-liberia/beach_wj5nt3.png");
     min-height: 50vh;
     background-position: center;
     background-repeat: no-repeat;

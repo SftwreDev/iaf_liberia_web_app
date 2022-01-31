@@ -26,7 +26,7 @@ body {
     .iaf-contact-banner-img{
 
         height: 33rem;
-        background:  linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),  url("/static/images/contact_us_img.jpg");
+        background:  linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),  url("https://res.cloudinary.com/internationalalluminumfactory/image/upload/v1643652283/iafi-liberia/contact_us_img_goux37.jpg");
         background-size: cover;
         margin-bottom: 5rem;
     }
@@ -78,7 +78,7 @@ body {
     .iaf-contact-banner-img{
 
         height: 33rem;
-        background:  linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),  url("/static/images/contact_us_img.jpg");
+        background:  linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),  url("https://res.cloudinary.com/internationalalluminumfactory/image/upload/v1643652283/iafi-liberia/contact_us_img_goux37.jpg");
         background-size: cover;
         margin-bottom: 5rem;
     }
